@@ -1,0 +1,67 @@
+ol > div > ol {
+    list-style-type: upper-latin;
+}
+
+.subject ol > li > label {
+    cursor: pointer;
+}
+
+.subject input[type=radio] {
+    display: none;
+}
+
+label {
+    font-weight: normal;
+    /*margin-bottom: 0px;*/
+}
+
+.checked,
+.checked label {
+    font-weight: bold;
+}
+/*倒计时和题目统计*/
+.processor{
+    
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border: 1px solid #DDDDDD;
+    background-color: white;
+    /*margin: 10px;*/
+    top: 60px;
+    right: 20px;
+    z-index: 100;
+}
+.time{
+    margin: 10px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.timu{
+	display: flex;
+	flex-wrap:wrap;
+}
+.timu > div{
+	display: block;
+	margin:5px;
+    line-height: 36px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+}
+.answered{
+	background-color: #33CC00;	
+}
+/*错误选项的样式*/
+.error{
+	color:red;
+}
+/*正确选项的样式*/
+.correct{
+    font-weight: bold;
+	color:#00cc00;
+}
